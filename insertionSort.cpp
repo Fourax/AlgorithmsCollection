@@ -21,7 +21,8 @@ int main ()
     std::vector<int>numbers = {1,23,345,654,76,89,74,987};
 
     insertionSort(numbers);
-
+    
+    std::cout << "Sorted vector: ";
     for(auto number:numbers)
     {
         std::cout << number << " ";

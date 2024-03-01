@@ -17,9 +17,10 @@ int main ()
     std::vector<int> numbers = {3,12,54,75,788,324,60};
   
     bubbleSort(numbers);
-
-   for(auto number:numbers)
-   {
+    
+    std::cout << "Sorted vector: ";
+    for(auto number:numbers)
+    {
         std::cout << number << " ";
-   }
+    }
 }

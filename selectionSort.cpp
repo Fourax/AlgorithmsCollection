@@ -17,7 +17,7 @@ void selectionSort(std::vector<int>& arr)
     std::vector<int>numbers = {1,23,345,65475,788,324,60};
 
     selectionSort(numbers);
-
+    std::cout << "Sorted vector: ";
     for(auto number:numbers)
     {
         std::cout << number << " ";
