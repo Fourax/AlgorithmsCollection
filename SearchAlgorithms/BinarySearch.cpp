@@ -2,18 +2,18 @@
 #include <vector>
 
 int binarySearch(const std::vector<int>& data, int wanted) {
-    int lewo = 0;
-    int prawo = data.size() - 1;
+    int left = 0;
+    int  right = data.size() - 1;
 
-    while (lewo <= prawo) {
-        int srodek = lewo + (prawo - lewo) / 2;
+    while (left <= right) {
+        int middle = left + (right - left) / 2;
 
-        if (data[srodek] == wanted) {
-            return srodek; 
-        } else if (data[srodek] < wanted) {
-            lewo = srodek + 1;
+        if (data[middle] == wanted) {
+            return middle; 
+        } else if (data[middle] < wanted) {
+            left = middle + 1;
         } else {
-            prawo = srodek - 1;
+            right = middle - 1;
         }
     }
     return -1; 
